@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Rokomari</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+   <!-- custom css file -->
+   <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- swiper css -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- bootstrap framework link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+
+
+<body>
+<!-- header section starts  -->
+
+<!-- <div class="container"> -->
+    <div class="header">
+     <nav class="header-1 navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+        <a href="#" class="logo"> <i class="fas fa-book"></i>Bookify</a>
+    
+              <label for="inputPassword6" class="col-form-label">Search</label>
+              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            <!-- <div class="icons">
+            <div id="searchbtn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <div id="login-btn" class="fas fa-user"></div> 
+            </div> -->
+            <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#signupModal">SignUP</button>
+            <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </div>
+
+     </nav>
+
+
+     <div id="header2">
+             <!-- <nav class="navbar"> -->
+                <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#arrival">Arrival</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <div class="mx-1"> -->
+                    
+                <!-- </div> -->
+                </ul>
+             <!-- </nav> -->
+     </div>
+
+</div>
+
+
+
+
+
+<!-- SIgnUp Modal -->
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--loginModal -->
+ 
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- login form -->
+
+<!-- <div class="login-form-container">
+    <form action="">
+        <h3>Sign In</h3>
+        <span>username</span>
+        <input type="password" id="inputPassword6" class="box" aria-describedby="passwordHelpInline">
+        <span>password</span>
+        <input type="password" id="inputPassword6" class="box" aria-describedby="passwordHelpInline">
+       <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me">
+           <label for="remember-me">remember-me</label>
+       </div>
+       <button type="button" class="btn">sign in</button>
+       <input type="submit" value="sign in" class="btn">
+       <p>forget password ? <a href="#">Click here...</a>  </p>
+       <p>Don't have an account? <a href="#">Create a account...</a>  </p>
+    </form>
+</div>  -->
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+    <section class="home" id="home">
+            <div class="row">
+                <div class="content">
+                    <h3> Upto 75% offer !</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse delectus nostrum at dolorum hic perspiciatis nam ratione quis provident veniam, enim temporibus magnam, voluptas reprehenderit? Quo accusamus ab aliquid?</p>
+                    <a href="#" class="btn">shop</a>
+                </div>
+
+                <div class="swiper books-slider">
+                    <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="image/52_book_cover.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/Alchemist.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/CP TSS.jpg" alt=""></a>
+                    <!-- <a href="#"><img src="image/MA HA.jpg" alt=""></a> -->
+                    <a href="#" class="swiper-slide"><img src="image/Shesherkabita.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/Teachyour.jfif" alt=""></a>
+                   </div>
+                   <img src="" class="stand " alt="">
+                </div>
+ 
+            </div>
+    </section>
+<!-- home section ends -->
+
+
+
+<!-- icon section starts -->
+<section class="icons-container">
+    <div class="icons">
+        <i class="fas fa-paper-plane"></i>
+        <div class="content">
+            <h3>Free shipping </h3>
+            <p>Order over $100</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100 seccure payment</p>
+        </div>
+    </div>
+
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy return</h3>
+            <p>10 days return</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24</h3>
+            <p>24/7 hour support</p>
+            <p>Call us any time</p>
+        </div>
+    </div>
+</section>
+<!-- icon section ends -->
+
+
+<!-- featured section starts -->
+
+<section class="featured" id="featured">
+    <h1 class="heading"><span>featured books</span></h1>
+       <div class="swiper featured-slider">
+           <div class="swiper-wrapper">
+
+               <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-1.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-3.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-4.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book- 5.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-  6.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-  7.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-  8.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+               
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book-  9.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="image/book- 10.jpeg"  alt="">
+                    </div>
+                     <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">$15.99<span>$20.99</span></div>
+                        <a href="#" class="btn">add to cart</a>
+                     </div>
+                </div>
+
+
+           </div>
+
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+
+
+        </div>
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+ 
+<section class="newsletter">
+    <form action=" ">
+        <h3>Subscribe for latest updates </h3>
+        <input type="email" name=" " placeholder="Enter your email" id=" " class="box">
+        <input type="submit" value="Subscribe" class="btn">
+    </form>
+</section>
+
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+<!-- newsletter section ends-->
+
+
+
+
+<!-- arrival section starts -->
+
+<section class="arrivals" id="arrivals">
+    <h1 class="heading"><span> new arrivals </span></h1>
+    <div class="arrivals-slider swiper">
+        <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="box swiper-slide">
+                <div class="image">
+                    <img src="image/book-1.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box swiper-slide">
+                <div class="image">
+                    <img src="image/book-3.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="box swiper-slide">
+                <div class="image">
+                    <img src="image/book-3.jpeg"  alt=" ">
+                </div>  
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book- 5.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-  6.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-  7.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-  8.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-  9.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book- 10.jpeg"  alt=" ">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">$15.99<span>$20.99</span></div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- arrival section ends -->
+  
+
+
+
+<footer class="bd-footer py-5 mt-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-2 mb-3">
+          <a class="navbar-brand" href="#">
+              <img src="images/Bpoka11.png" alt="Boipoka" width="85" height="60">
+            </a><span class="fs-5"><strong>Boipoka</strong></span>
+          
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">BOipoka team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+            <li class="mb-2">Currently v5.0.2.</li>
+            <li class="mb-2">Analytics by <a href="https://usefathom.com/ref/ADZSBE" target="_blank" rel="noopener">Fathom</a>.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 offset-lg-1 mb-3">
+          <h5>Explore By</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href=" ">Category</a></li>
+            <li class="mb-2"><a href=" ">Author</a></li>
+            <li class="mb-2"><a href=" ">Publication</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h5>Get to know us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href=" ">About Us</a></li>
+            <li class="mb-2"><a href=" ">Contact Us</a></li>
+            <li class="mb-2"><a href=" ">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h5>Policy</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Terms and conditions</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Policies</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  
+
+<!-- custom js file -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
